@@ -1,0 +1,15 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.project-card {
+  @apply transition-100 shadow bg-green-100 text-green-500 text-lg font-bold text-center p-10 rounded-lg ;
+}
+
+.project-card:hover {
+  @apply shadow-md cursor-pointer ;
+}
+
+.transition-100 {
+  @apply transition ease-in-out delay-100 duration-200 ;
+}

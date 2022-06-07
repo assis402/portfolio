@@ -1,0 +1,37 @@
+<nav class="flex items-center p-3 flex-wrap shadow-sm md:pt-0">
+  <a href="#" class="p-2 mr-4 inline-flex items-center gap-3">
+    <span class="w-12">
+      <img src="../../../assets/perfil-sm.jpeg" alt="" class="rounded-full shadow">
+    </span>
+    <span class="text-xl text-gray-700 tracking-wide text-poppins-x">matheus.assis</span>
+  </a>
+  <button
+    class="text-gray-400 text-center inline-flex p-3 hover:text-gray-700 rounded md:hidden ml-auto"
+    (click)="showSmallMenu = !showSmallMenu"
+  >
+    <i class="material-icons">menu</i>
+  </button>
+  <div class="top-nav w-full md:inline-flex md:flex-grow md:w-auto"
+       id="navigation"
+       [className]="showSmallMenu ?
+       'top-nav w-full md:inline-flex md:flex-grow md:w-auto' : 'top-nav w-full md:inline-flex md:flex-grow md:w-auto hidden'"
+  >
+    <div class="md:inline-flex md:flex-row md:ml-auto md:mr-5 flex flex-col">
+      <a href="#"
+         class="md:inline-flex md:w-auto px-3 py-2 rounded text-gray-400 hover:text-gray-700"
+      >
+        <span>Home</span>
+      </a>
+      <a href="#"
+         class="md:inline-flex md:w-auto px-3 py-2 rounded text-gray-400 hover:text-gray-700"
+      >
+        <span>Projetos</span>
+      </a>
+      <a href="#"
+         class="md:inline-flex md:w-auto px-3 py-2 rounded text-gray-400 hover:text-gray-700"
+      >
+        <span>Sobre</span>
+      </a>
+    </div>
+  </div>
+</nav>
