@@ -3,11 +3,19 @@
 @import "tailwindcss/utilities";
 
 .project-card {
-  @apply transition-100 shadow bg-green-100 text-green-500 text-lg font-bold text-center p-10 rounded-lg ;
+  @apply flex flex-col border border-gray-200 pb-3 transition-100 shadow rounded-lg text-xs;
 }
 
 .project-card:hover {
   @apply shadow-md cursor-pointer ;
+}
+
+.project-body {
+  @apply p-3 ;
+}
+
+.project-img {
+  @apply h-1/2 bg-gray-100 rounded-t-lg flex justify-center items-center ;
 }
 
 .transition-100 {
