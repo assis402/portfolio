@@ -10,8 +10,13 @@
   @apply flex flex-row md:flex-col md:pb-3 ;
 
   .project-img {
-    @apply md:h-1/2 md:w-full bg-gray-100 rounded-t-lg flex justify-center items-center ;
-    min-width: 25%;
+    @apply md:h-1/2 md:w-full bg-gray-100 rounded-t-lg flex justify-center content-between items-center max-w-[25%] md:max-w-[100%] ;
+    min-width: 21.5%;
+  }
+
+  .stack {
+    @apply ml-auto md:ml-3 my-1 md:my-0 mx-1 md:mx-3 justify-center md:justify-start max-w-[90px] md:max-w-[100%];
+    // max-width: 90px;
   }
 }
 
