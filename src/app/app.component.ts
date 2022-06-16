@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolio';
+  darkMode = false;
+
+  toggleDarkMode(event: boolean) {
+    this.darkMode = event;
+  }
+
+  ngOnInit(): void {
+  }
 }

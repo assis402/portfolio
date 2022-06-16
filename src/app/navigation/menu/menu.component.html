@@ -6,7 +6,7 @@
     <span class="text-xl text-gray-700 tracking-wide text-poppins-x">matheus.assis</span>
   </a>
   <button
-    class="text-gray-400 text-center inline-flex p-3 hover:text-gray-700 rounded md:hidden ml-auto"
+    class="dark:bg-black text-gray-400 text-center inline-flex p-3 hover:text-gray-700 rounded md:hidden ml-auto"
     (click)="showSmallMenu = !showSmallMenu"
   >
     <i class="material-icons">menu</i>
@@ -32,6 +32,12 @@
       >
         <span>Sobre</span>
       </a>
+      <button
+        class=""
+        (click)="toggleDarkMode()"
+      >
+      Dark mode
+      </button>
     </div>
   </div>
 </nav>

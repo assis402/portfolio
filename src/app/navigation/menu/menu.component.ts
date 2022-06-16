@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-menu',
@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
+  @Output() toggleDarkModeEvent = new EventEmitter<boolean>();
+  @Input() darkMode: any;
   showSmallMenu = false;
 
   constructor() { }
@@ -14,4 +16,7 @@ export class MenuComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  toggleDarkMode() {
+    this.toggleDarkModeEvent.emit(!this.darkMode);
+  }
 }

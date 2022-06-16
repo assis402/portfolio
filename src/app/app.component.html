@@ -1,2 +1,5 @@
-<app-menu></app-menu>
-<router-outlet></router-outlet>
+<div [className]="darkMode ? 'dark' : ''">
+  {{darkMode}}
+  <app-menu [darkMode]="darkMode" (toggleDarkModeEvent)="toggleDarkMode($event)"></app-menu>
+  <router-outlet></router-outlet>
+</div>
