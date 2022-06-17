@@ -22,3 +22,11 @@
   font-family: Poppins;
   font-weight: 700;
 }
+
+.transition-100 {
+  @apply transition ease-in-out delay-100 duration-200 ;
+}
+
+.text-title {
+  @apply text-[#374151] dark:text-[#e1e1e1] tracking-wide;
+}

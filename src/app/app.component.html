@@ -1,5 +1,6 @@
 <div [className]="darkMode ? 'dark' : ''">
-  {{darkMode}}
-  <app-menu [darkMode]="darkMode" (toggleDarkModeEvent)="toggleDarkMode($event)"></app-menu>
-  <router-outlet></router-outlet>
+  <body class="dark:bg-[#191919] bg-[#fafafc] text-poppins-sm md:px-10 md:py-8 transition-100">
+      <app-menu [darkMode]="darkMode" (toggleDarkModeEvent)="toggleDarkMode($event)"></app-menu>
+      <router-outlet></router-outlet>
+  </body>
 </div>

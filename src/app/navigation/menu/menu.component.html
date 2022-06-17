@@ -1,43 +1,43 @@
-<nav class="flex items-center p-3 flex-wrap shadow-sm md:pt-0">
+<nav class="flex items-center p-3 flex-wrap box-shadow md:pt-0">
   <a href="#" class="p-2 mr-4 inline-flex items-center gap-3">
     <span class="w-12">
       <img src="../../../assets/perfil-sm.jpeg" alt="" class="rounded-full shadow">
     </span>
-    <span class="text-xl text-gray-700 tracking-wide text-poppins-x">matheus.assis</span>
+    <span class="text-lg text-title text-poppins-x transition-100">matheus.assis</span>
   </a>
   <button
-    class="dark:bg-black text-gray-400 text-center inline-flex p-3 hover:text-gray-700 rounded md:hidden ml-auto"
+    class="text-gray-400 text-center inline-flex p-3 hover:text-gray-700 rounded md:hidden ml-auto"
     (click)="showSmallMenu = !showSmallMenu"
   >
     <i class="material-icons">menu</i>
   </button>
-  <div class="top-nav w-full md:inline-flex md:flex-grow md:w-auto"
-       id="navigation"
+  <div id="navigation"
        [className]="showSmallMenu ?
-       'mt-3 top-nav w-full md:inline-flex md:flex-grow md:w-auto' : 'top-nav w-full md:inline-flex md:flex-grow md:w-auto hidden'"
+       'top-nav w-full md:inline-flex md:flex-grow md:w-auto' : 'top-nav w-full md:inline-flex md:flex-grow md:w-auto hidden'"
   >
-    <div class="md:inline-flex md:flex-row md:ml-auto md:mr-5 flex flex-col">
-      <a href="#"
+    <div class="md:inline-flex md:flex-row md:mr-5 flex md:flex-auto flex-col">
+      <div class="flex md:flex-row flex-col">
+        <a href="#"
          class="md:inline-flex md:w-auto px-3 py-2 rounded text-gray-400 hover:text-gray-700"
-      >
-        <span>Home</span>
-      </a>
-      <a href="#"
-         class="md:inline-flex md:w-auto px-3 py-2 rounded text-gray-400 hover:text-gray-700"
-      >
-        <span>Projetos</span>
-      </a>
-      <a href="#"
-         class="md:inline-flex md:w-auto px-3 py-2 rounded text-gray-400 hover:text-gray-700"
-      >
-        <span>Sobre</span>
-      </a>
-      <button
-        class=""
-        (click)="toggleDarkMode()"
-      >
-      Dark mode
-      </button>
+        >
+          <span class="text-sm">Home</span>
+        </a>
+        <a href="#"
+          class="md:inline-flex md:w-auto px-3 py-2 rounded text-gray-400 hover:text-gray-700"
+        >
+          <span class="text-sm">Projetos</span>
+        </a>
+        <a href="#"
+          class="md:inline-flex md:w-auto px-3 py-2 rounded text-gray-400 hover:text-gray-700"
+        >
+          <span class="text-sm">Sobre</span>
+        </a>
+      </div>
+      <div class="ml-auto inline self-center" (click)="toggleDarkMode()">
+        <div class="flex items-center justify-center bg-gray-200 w-9 h-9 rounded-lg material-icons transition-100 cursor-pointer noselect text-[#374151] dark:text-[#d1d1d1]">
+          {{darkMode ? 'dark_mode' : 'light_mode'}}
+        </div>
+      </div>
     </div>
   </div>
 </nav>

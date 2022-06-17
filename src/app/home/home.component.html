@@ -1,104 +1,94 @@
-<!-- <div class="grid grid-cols-1 md:grid-cols-5 gap-4 p-10 grid-rows-2 md:grid-rows-4">
-  <div class="project-card md:col-span-2">0</div>
-  <div class="grid grid-cols-1 md:grid-cols-5 gap-4 grid-rows-3 md:col-span-3">
-    <div class="project-card md:row-span-2 md:col-span-2">1</div>
-    <div class="project-card md:col-span-3">2</div>
-    <div class="project-card md:col-span-3">3</div>
-    <div class="project-card md:col-span-2">4</div>
-    <div class="project-card md:col-span-2">5</div>
-    <div class="project-card ">6</div>
-  </div>
-</div> -->
-
-<div class="p-5 md:pt-10 md:p-0 gap-10 flex flex-col md:flex-col">
-  <div class="project-card">0</div>
-  <div class="grid grid-cols-1 md:grid-cols-5 gap-4 w-full">
-    <span class="md:col-span-5">Projetos</span>
-    <div class="project-card first-card-alignment md:row-span-2 md:col-span-2">
-      <div class="project-img">
-        <img src="../../assets/webhook.png" alt="">
+<div [className]="darkMode ? 'dark' : ''">
+  <div class="dark:text-gray-100 p-5 md:pt-10 md:p-0 gap-10 flex flex-col md:flex-col">
+    <!-- <div class="project-card">0</div> -->
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-4 w-full">
+      <span class="text-title text-lg font-bold md:col-span-5 transition-100">Projetos</span>
+      <div class="project-card bg-white dark:bg-[#161616] first-card-alignment md:row-span-2 md:col-span-2">
+        <div class="project-img">
+          <div class="icon material-icons">webhook</div>
+        </div>
+        <div class="project-body">
+          <p>Projeto teste</p>
+          <p>API em .NET 5</p>
+          <p>Criado em 06/06/2022</p>
+          <p>Criado em 06/06/2022</p>
+        </div>
+        <div class="stack">
+          <img src="../../assets/icons/csharp.png" alt="">
+          <img src="../../assets/icons/postgre.png" alt="">
+          <img src="../../assets/icons/azure.png" alt="">
+        </div>
       </div>
-      <div class="project-body">
-        <p>Projeto teste</p>
-        <p>API em .NET 5</p>
-        <p>Criado em 06/06/2022</p>
-        <p>Criado em 06/06/2022</p>
+      <div class="project-card bg-white dark:bg-[#161616] other-cards-alignment md:col-span-3">
+        <div class="project-img">
+          <div class="icon material-icons">webhook</div>
+        </div>
+        <div class="project-body">
+          <p>Projeto teste</p>
+          <p>API em .NET 5</p>
+          <p>Criado em 06/06/2022</p>
+          <p>Criado em 06/06/2022</p>
+          <p>Criado em 06/06/2022</p>
+        </div>
+        <div class="stack">
+          <img src="../../assets/icons/csharp.png" alt="">
+          <img src="../../assets/icons/postgre.png" alt="">
+          <img src="../../assets/icons/azure.png" alt="">
+        </div>
       </div>
-      <div class="stack">
-        <img src="../../assets/icons/csharp.png" alt="">
-        <img src="../../assets/icons/postgre.png" alt="">
-        <img src="../../assets/icons/azure.png" alt="">
+      <div class="project-card bg-white dark:bg-[#161616] other-cards-alignment md:col-span-3">
+        <div class="project-img">
+          <div class="icon material-icons">webhook</div>
+        </div>
+        <div class="project-body">
+          <p>Projeto teste</p>
+          <p>API em .NET 5</p>
+          <p>Criado em 06/06/2022</p>
+          <p>Criado em 06/06/2022</p>
+          <p>Criado em 06/06/2022</p>
+        </div>
+        <div class="stack">
+          <img src="../../assets/icons/csharp.png" alt="">
+          <img src="../../assets/icons/postgre.png" alt="">
+          <img src="../../assets/icons/azure.png" alt="">
+        </div>
       </div>
+      <div class="project-card bg-white dark:bg-[#161616] other-cards-alignment md:col-span-2">
+        <div class="project-img">
+          <div class="icon material-icons">webhook</div>
+        </div>
+        <div class="project-body">
+          <p>Projeto teste</p>
+          <p>API em .NET 5</p>
+          <p>Criado em 06/06/2022</p>
+          <p>Criado em 06/06/2022</p>
+          <p>Criado em 06/06/2022</p>
+        </div>
+        <div class="stack">
+          <img src="../../assets/icons/csharp.png" alt="">
+          <img src="../../assets/icons/postgre.png" alt="">
+          <img src="../../assets/icons/azure.png" alt="">
+        </div>
+      </div>
+      <div class="project-card bg-white dark:bg-[#161616] other-cards-alignment md:col-span-2">
+        <div class="project-img">
+          <div class="icon material-icons">webhook</div>
+        </div>
+        <div class="project-body">
+          <p>Projeto teste</p>
+          <p>API em .NET 5</p>
+          <p>Criado em 06/06/2022</p>
+          <p>Criado em 06/06/2022</p>
+          <p>Criado em 06/06/2022</p>
+        </div>
+        <div class="stack">
+          <img src="../../assets/icons/csharp.png" alt="">
+          <img src="../../assets/icons/postgre.png" alt="">
+          <img src="../../assets/icons/azure.png" alt="">
+          <img src="../../assets/icons/azure.png" alt="">
+        </div>
+      </div>
+      <div class="project-card bg-white dark:bg-[#161616] final-card-alignment">outros projetos..</div>
     </div>
-    <div class="project-card other-cards-alignment md:col-span-3">
-      <div class="project-img">
-        <img src="../../assets/webhook.png" alt="">
-      </div>
-      <div class="project-body">
-        <p>Projeto teste</p>
-        <p>API em .NET 5</p>
-        <p>Criado em 06/06/2022</p>
-        <p>Criado em 06/06/2022</p>
-        <p>Criado em 06/06/2022</p>
-      </div>
-      <div class="stack">
-        <img src="../../assets/icons/csharp.png" alt="">
-        <img src="../../assets/icons/postgre.png" alt="">
-        <img src="../../assets/icons/azure.png" alt="">
-      </div>
-    </div>
-    <div class="project-card other-cards-alignment md:col-span-3">
-      <div class="project-img">
-        <img src="../../assets/webhook.png" alt="">
-      </div>
-      <div class="project-body">
-        <p>Projeto teste</p>
-        <p>API em .NET 5</p>
-        <p>Criado em 06/06/2022</p>
-        <p>Criado em 06/06/2022</p>
-        <p>Criado em 06/06/2022</p>
-      </div>
-      <div class="stack">
-        <img src="../../assets/icons/csharp.png" alt="">
-        <img src="../../assets/icons/postgre.png" alt="">
-        <img src="../../assets/icons/azure.png" alt="">
-      </div>
-    </div>
-    <div class="project-card other-cards-alignment md:col-span-2">
-      <div class="project-img">
-        <img src="../../assets/webhook.png" alt="">
-      </div>
-      <div class="project-body">
-        <p>Projeto teste</p>
-        <p>API em .NET 5</p>
-        <p>Criado em 06/06/2022</p>
-        <p>Criado em 06/06/2022</p>
-        <p>Criado em 06/06/2022</p>
-      </div>
-      <div class="stack">
-        <img src="../../assets/icons/csharp.png" alt="">
-        <img src="../../assets/icons/postgre.png" alt="">
-        <img src="../../assets/icons/azure.png" alt="">
-      </div>
-    </div>
-    <div class="project-card other-cards-alignment md:col-span-2">
-      <div class="project-img">
-        <img src="../../assets/webhook.png" alt="">
-      </div>
-      <div class="project-body">
-        <p>Projeto teste</p>
-        <p>API em .NET 5</p>
-        <p>Criado em 06/06/2022</p>
-        <p>Criado em 06/06/2022</p>
-        <p>Criado em 06/06/2022</p>
-      </div>
-      <div class="stack">
-        <img src="../../assets/icons/csharp.png" alt="">
-        <img src="../../assets/icons/postgre.png" alt="">
-        <img src="../../assets/icons/azure.png" alt="">
-        <img src="../../assets/icons/azure.png" alt="">
-      </div>
-    </div>
-    <div class="project-card final-card-alignment">outros projetos..</div>
   </div>
 </div>
