@@ -1,4 +1,4 @@
-<nav class="flex items-center p-3 flex-wrap md:pt-0">
+<nav class="flex dark:bg-[#0f0f0f] bg-[#ffffff] items-center p-3 flex-wrap shadow-sm rounded transition-100">
   <a href="#" class="p-2 mr-4 inline-flex items-center gap-3">
     <span class="w-12">
       <img src="../../../assets/perfil-sm.jpeg" alt="" class="rounded-full shadow">
@@ -6,10 +6,10 @@
     <span class="text-lg text-title text-poppins-x transition-100">matheus.assis</span>
   </a>
   <button
-    class="text-gray-400 text-center inline-flex p-3 hover:text-gray-700 rounded md:hidden ml-auto"
+    class="text-gray-400 text-center inline-flex p-3 hover:text-gray-700 rounded md:hidden ml-auto noselect"
     (click)="showSmallMenu = !showSmallMenu"
   >
-    <i class="material-icons">menu</i>
+    <i class="material-icons noselect">menu</i>
   </button>
   <div id="navigation"
        [className]="showSmallMenu ?
@@ -20,17 +20,17 @@
         <a href="#"
          class="md:inline-flex md:w-auto px-3 py-2 rounded text-gray-400 hover:text-gray-700"
         >
-          <span class="text-sm">Home</span>
+          <span>Home</span>
         </a>
         <a href="#"
           class="md:inline-flex md:w-auto px-3 py-2 rounded text-gray-400 hover:text-gray-700"
         >
-          <span class="text-sm">Projetos</span>
+          <span>Projetos</span>
         </a>
         <a href="#"
           class="md:inline-flex md:w-auto px-3 py-2 rounded text-gray-400 hover:text-gray-700"
         >
-          <span class="text-sm">Sobre</span>
+          <span>Sobre</span>
         </a>
       </div>
       <div class="flex flex-row gap-3 self-end items-center ml-auto">
