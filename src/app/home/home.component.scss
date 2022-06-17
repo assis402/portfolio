@@ -1,7 +1,3 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-
 .project-card {
   @apply flex flex-col shadow-sm transition-100 rounded-lg text-xs;
 }
@@ -10,7 +6,7 @@
   @apply flex flex-row md:flex-col md:pb-3 ;
 
   .project-img {
-    @apply md:h-1/2 md:w-full bg-[#b5bac930] rounded-t-lg flex justify-center content-between items-center max-w-[25%] md:max-w-[100%] ;
+    @apply md:h-1/2 md:w-full rounded-t-lg flex justify-center content-between items-center max-w-[25%] md:max-w-[100%] transition-100 ;
     min-width: 21.5%;
   }
 
@@ -24,7 +20,7 @@
   @apply flex flex-row ;
 
   .project-img {
-    @apply bg-[#b5bac930] rounded-l-lg flex justify-center items-center  ;
+    @apply rounded-l-lg flex justify-center items-center transition-100;
     min-width: 21.5%;
     max-width: 25%;
   }
@@ -36,7 +32,7 @@
 }
 
 .final-card-alignment {
-  @apply justify-center text-center font-bold text-[#374151] text-sm min-h-[100px]
+  @apply justify-center text-center font-bold text-sm min-h-[100px]
 }
 
 .project-card:hover {
