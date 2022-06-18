@@ -1,8 +1,8 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&family=Source+Code+Pro:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500;600;700;800&display=swap');
 
 .text-poppins {
   font-family: Poppins;
@@ -27,6 +27,6 @@
   @apply transition ease-in-out delay-100 duration-200 ;
 }
 
-.text-title {
-  @apply text-[#374151] dark:text-[#e1e1e1] tracking-wide;
-}
+// .text-title {
+//   @apply text-[#374151] dark:text-[#e1e1e1] tracking-wide;
+// }
