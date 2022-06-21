@@ -1,5 +1,5 @@
 .about-card {
-  @apply flex md:flex-row flex-col transition-100 p-5 items-center gap-10 md:p-16;
+  @apply flex md:flex-row flex-col transition-100 p-5 items-center gap-10 md:p-12 md:h-[550] relative ;
 
   .icon {
     transition: transform .2s !important;
@@ -32,9 +32,9 @@
 }
 
 .triangle {
-  @apply right-[-30] w-[350] bottom-[40] opacity-10;
-  // right: 68;
-  // width: 350;
-  // bottom: 280;
+  @apply md:right-[9] md:w-[340] md:bottom-[69] md:opacity-10;
+  // right: 9;
+  // width: 340;
+  // bottom: 69;
   // opacity: 0.1;
 }
