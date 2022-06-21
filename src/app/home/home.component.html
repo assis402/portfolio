@@ -1,6 +1,6 @@
 <div class="dark:text-gray-100 p-5 md:pt-10 md:p-0 gap-10 flex flex-col md:flex-col">
   <app-about></app-about>
-  <div class="grid grid-cols-1 md:grid-cols-5 gap-4 w-full">
+  <div class="grid grid-cols-1 md:grid-cols-5 gap-4 w-full p-4 md:p-8">
     <span class="text-title text-lg font-bold md:col-span-5 transition-100">Projetos</span>
     <div class="dark:bg-[#0f0f0f] bg-[#ffffff] project-card first-card-alignment md:row-span-2 md:col-span-2">
       <div class="dark:bg-[#171717] bg-[#edeef3] project-img">
@@ -90,3 +90,17 @@
     <div class="dark:bg-[#0f0f0f] bg-[#ffffff] text-title project-card final-card-alignment">outros projetos..</div>
   </div>
 </div>
+
+<script>
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      document.getElementById("navbar").style.padding = "30px 10px";
+      document.getElementById("logo").style.fontSize = "25px";
+    } else {
+      document.getElementById("navbar").style.padding = "80px 10px";
+      document.getElementById("logo").style.fontSize = "35px";
+    }
+  }
+</script>
