@@ -1,5 +1,5 @@
 .about-card {
-  @apply flex md:flex-row flex-col transition-100 p-8 md:items-start items-center gap-10 relative ;
+  @apply flex md:flex-row flex-col transition-100 p-8 md:items-start items-center gap-10 relative mt-[50];
 
   .icon {
     transition: transform .2s !important;

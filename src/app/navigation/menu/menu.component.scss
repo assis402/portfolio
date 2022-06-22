@@ -10,10 +10,18 @@
 
 .material-icons.md-dark { color: rgba(0, 0, 0, 0.7); }
 
-nav {
+#navbar {
+  @apply flex items-center p-6 flex-wrap transition-100;
+  top: 0;
+  right: 0;
   overflow: hidden;
-    width: 100%;
-    position: fixed;
-    z-index: 1000;
-    background: #fafafd;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  background: #fafafd;
+  padding: 90px 10px;
+}
+
+.transition-100 {
+  @apply transition ease-in-out delay-100 duration-200 ;
 }
