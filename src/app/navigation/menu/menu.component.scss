@@ -19,7 +19,12 @@
   position: fixed;
   z-index: 1000;
   background: #fafafd;
-  padding: 90px 10px;
+}
+
+#perfil {
+  //@apply w-12;
+  width: 3rem;
+  visibility: visible
 }
 
 .transition-100 {
