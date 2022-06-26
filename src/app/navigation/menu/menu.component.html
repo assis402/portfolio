@@ -1,9 +1,9 @@
-<nav id="navbar" [className]="showSmallMenu ? 'shadow-nav' : ''">
+<nav id="navbar" [className]="showSmallMenu ? 'shadow-nav bg-[#fafafd] dark:bg-[#000000]' : 'bg-[#fafafd] dark:bg-[#000000]'">
   <a href="#" class="p-2 mr-2 inline-flex items-center gap-3">
     <span id="perfil">
       <img src="../../../assets/perfil-sm.jpeg" alt="" class="rounded-full shadow">
     </span>
-    <span class="text-xl text-title text-poppins-x transition-100">matheus.assis</span>
+    <span class="text-xl text-title text-poppins-x transition-100 dark:text-white">matheus.assis</span>
   </a>
   <button
     class="text-gray-400 text-center inline-flex p-3 hover:text-gray-700 rounded md:hidden ml-auto noselect"
@@ -18,19 +18,19 @@
     <div class="md:inline-flex md:flex-row md:mr-5 flex md:flex-auto flex-col md:gap-10">
       <div class="flex md:flex-row flex-col md:ml-0 ml-2 md:mt-0 mt-2" id="menu-text">
         <a href="#"
-         class="md:inline-flex md:w-auto px-3 py-2 rounded hover:text-gray-700 items-center"
+         class="menu-item"
         >
-          <span>Home</span>
+          <span class="dark:text-white transition-100">Home</span>
         </a>
         <a href="#"
-          class="md:inline-flex md:w-auto px-3 py-2 rounded hover:text-gray-700 items-center"
+          class="menu-item"
         >
-          <span>Projetos</span>
+          <span class="dark:text-white transition-100">Projetos</span>
         </a>
         <a href="#"
-          class="md:inline-flex md:w-auto px-3 py-2 rounded hover:text-gray-700 items-center"
+          class="menu-item"
         >
-          <span>Sobre</span>
+          <span class="dark:text-white transition-100">Sobre</span>
         </a>
       </div>
       <div class="flex flex-row gap-4 self-end items-center ml-auto md:m-0 m-2">

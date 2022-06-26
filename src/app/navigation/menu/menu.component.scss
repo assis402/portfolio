@@ -11,7 +11,7 @@
 .material-icons.md-dark { color: rgba(0, 0, 0, 0.7); }
 
 #navbar {
-  @apply flex items-center flex-wrap transition-100 bg-[#fafafd] dark:bg-[#ffffff];
+  @apply flex items-center flex-wrap transition-100;
   padding: 24px;
   top: 0;
   right: 0;
@@ -19,24 +19,27 @@
   width: 100%;
   position: fixed;
   z-index: 1000;
-  background: #fafafd;
-  transition: padding .2s linear;
+  transition: background-color 300ms, padding 300ms linear ;
 }
 
 #perfil {
   width: 3rem;
-  transition: width .2s linear;
+  transition: width 300ms linear;
 }
 
 #menu-text {
   font-size: medium;
-  transition: font-size .2s linear;
+  transition: font-size 300ms linear;
 }
 
 .transition-100 {
-  @apply transition ease-in-out duration-300 ;
+  @apply transition duration-300 ;
 }
 
 .shadow-nav {
   box-shadow: 0 1px 6px 0 rgb(0 0 0 / 15%) !important;
+}
+
+.menu-item {
+  @apply md:inline-flex md:w-auto px-3 py-2 rounded hover:opacity-70 items-center transition-100;
 }

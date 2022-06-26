@@ -7,9 +7,25 @@
 
   .project-img {
     @apply md:h-1/2 md:w-full rounded-t-lg flex justify-center content-between items-center max-w-[25%] md:max-w-[100%] transition-100 ;
+    border: 0px;
     min-width: 21.5%;
-    border-bottom-left-radius: 200%60px;
-    border-bottom-right-radius: 200%60px;
+
+  }
+
+  @media (min-width: 768px) {
+    .border {
+      border-bottom-left-radius: 200%60px !important;
+      border-bottom-right-radius: 200%60px !important;
+      border-top-right-radius: 30px !important;
+      border-top-left-radius: 30px !important;
+    }
+  }
+
+  .border {
+    border-top-right-radius: 100%660px;
+    border-bottom-right-radius: 100%660px;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
   }
 
   .stack {
@@ -25,8 +41,11 @@
     @apply rounded-l-lg flex justify-center items-center transition-100;
     min-width: 21.5%;
     max-width: 25%;
+    border: 0px;
     border-top-right-radius: 100%660px;
     border-bottom-right-radius: 100%660px;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
   }
 
   .stack {
@@ -57,9 +76,12 @@
 }
 
 .transition-100 {
-  @apply transition ease-in-out delay-100 duration-200 ;
+  @apply transition duration-300 ;
 }
 
 .project-img .icon {
   @apply text-5xl text-[#374151] dark:text-[#d1d1d1];
+}
+
+.container-about {
 }

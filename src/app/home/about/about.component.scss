@@ -1,5 +1,5 @@
 .about-card {
-  @apply flex md:flex-row flex-col transition-100 p-8 md:items-start items-center gap-10 relative mt-[50];
+  @apply flex md:flex-row flex-col transition-100 p-8 md:items-start items-center gap-10 relative mt-[100px];
 
   .icon {
     transition: transform .2s !important;
@@ -20,7 +20,7 @@
 }
 
 .transition-100 {
-  @apply transition ease-in-out delay-100 duration-200 ;
+  @apply transition duration-300 ;
 }
 
 .bt-contact {
