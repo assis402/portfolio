@@ -1,0 +1,15 @@
+.bt-contact {
+  @apply bg-[#5682fc] hover:bg-blue-700 text-white py-2 px-4 rounded-full mr-3 transition-100;
+}
+
+.bt-more {
+  @apply border-2 text-gray-500 py-2 px-4 rounded-full transition-100;
+}
+
+.bt-more:hover {
+  @apply border-gray-300/60 opacity-70;
+}
+
+.transition-100 {
+  @apply transition duration-300 ;
+}

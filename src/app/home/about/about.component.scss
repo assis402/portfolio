@@ -1,45 +1,7 @@
 .about-card {
-  @apply flex md:flex-row flex-col transition-100 p-8 md:items-start items-center gap-10 relative mt-[100px];
-
-  .icon {
-    transition: transform .2s !important;
-  }
-
-  .icon:hover {
-    transform: scale(1.5);
-  }
-}
-
-.tech:hover .tech-span {
-  opacity: 1;
-}
-
-.tech-span {
-  opacity: 0;
-  @apply absolute top-10 right-0 text-right transition-100;
+  @apply flex md:flex-row flex-col transition-100 p-8 md:items-start items-center gap-10 relative mt-[100px]
 }
 
 .transition-100 {
   @apply transition duration-300 ;
-}
-
-.bt-contact {
-  @apply bg-[#5682fc] hover:bg-blue-700 text-white py-2 px-4 rounded-full mr-3 transition-100;
-}
-
-.bt-more {
-  @apply border-2 text-gray-500 py-2 px-4 rounded-full transition-100;
-}
-
-.bt-more:hover {
-  @apply border-gray-300/60 opacity-70;
-}
-
-.triangle {
-  @apply right-[-30] w-[340] bottom-[-17] md:right-[-30] md:w-[340] md:bottom-[-17] opacity-10;
-  max-width: initial !important;
-  // right: -30;
-  // width: 340;
-  // bottom: -17;
-  // opacity: 0.1;
 }

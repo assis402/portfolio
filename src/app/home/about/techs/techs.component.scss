@@ -1,0 +1,33 @@
+.icon {
+  transition: transform .2s !important;
+}
+
+.icon:hover {
+  transform: scale(1.5);
+}
+
+.tech:hover .tech-text {
+  opacity: 1;
+}
+
+.tech-text {
+  opacity: 0;
+  @apply absolute top-10 right-0 text-right transition-100;
+}
+
+.tech-row {
+  @apply flex flex-row gap-4 ;
+}
+
+.transition-100 {
+  @apply transition duration-300 ;
+}
+
+.triangle {
+  @apply right-[-30] w-[340] bottom-[-17] md:right-[-30] md:w-[340] md:bottom-[-17] opacity-10;
+  max-width: initial !important;
+  // right: -30;
+  // width: 340;
+  // bottom: -17;
+  // opacity: 0.1;
+}
